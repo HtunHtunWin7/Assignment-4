@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PADC_Assign_4</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="navigation_search">Search</string>
+    <string name="button_text">$89/day</string>
+    <string name="rating_text">4.5 (21 Rating)</string>
+    <string name="txt_2">FREE BUREST DINNER</string>
+    <string name="txt_3">Airpot, Road, Rhaka</string>
+    <string name="txt_4">Free Wifi . Swimming</string>
+    <string name="price"><![CDATA[Price $$>$$$$]]></string>
+</resources>

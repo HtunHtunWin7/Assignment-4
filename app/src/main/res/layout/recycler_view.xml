@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/imageView"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/circle_image"
+        app:srcCompat="@drawable/profile"/>
+    <TextView
+        android:id="@+id/text"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_margin="@dimen/padding_double"
+        android:padding="@dimen/normal_spacing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_add_location_black_24dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:layout_marginStart="@dimen/normal_spacing"
+        android:layout_marginTop="@dimen/normal_spacing"
+        app:layout_constraintLeft_toRightOf="@+id/text"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dhaka"
+
+        app:layout_constraintLeft_toRightOf="@+id/text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/normal_spacing"
+        android:layout_marginBottom="@dimen/normal_spacing"
+        android:textSize="@dimen/txt_22"
+        android:textColor="@color/black"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="@dimen/activity_horizontal_margin"
+        android:id="@+id/recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>

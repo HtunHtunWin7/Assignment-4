@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/padding_double">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Explore"
+            android:textColor="@color/black"
+            android:textSize="@dimen/r2_txt_size"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:drawableStart="@drawable/ic_local_bar_black_24dp"
+            android:drawablePadding="@dimen/normal_spacing"
+            android:text="Filter"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/txt_dhaka"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                style="@style/Theme.AppCompat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/ic_play_circle_filled_black_24dp"
+                android:background="@drawable/rectangle_shape"
+                android:drawablePadding="@dimen/normal_spacing"
+                android:padding="@dimen/normal_spacing"
+                android:text="Dhaka"
+                android:textSize="@dimen/txt_22" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Location"
+                    android:background="#f5f5f5"
+                    android:padding="@dimen/normal_spacing"
+                    android:layout_marginStart="@dimen/triple_spacing"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/txt_dhaka"
+                    app:layout_constraintBottom_toTopOf="@+id/txt_dhaka"/>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/normal_spacing"
+                android:layout_marginBottom="@dimen/normal_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    android:id="@+id/txt_checkin"
+                    style="@style/Theme.AppCompat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/small_padding"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_shape"
+                    android:padding="@dimen/normal_spacing"
+                    android:text="07/ Mar / 2019" />
+
+                <TextView
+                    style="@style/Theme.AppCompat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/small_padding"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_shape"
+                    android:padding="@dimen/normal_spacing"
+                    android:text="12/ Mar / 2019" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/normal_spacing"
+                android:layout_marginBottom="@dimen/normal_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <TextView
+                    style="@style/Theme.AppCompat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/small_padding"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_shape"
+                    android:padding="@dimen/normal_spacing"
+                    android:text="2 Adults" />
+
+                <TextView
+                    style="@style/Theme.AppCompat"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/small_padding"
+                    android:layout_weight="1"
+                    android:background="@drawable/rectangle_shape"
+                    android:padding="@dimen/normal_spacing"
+                    android:text="03" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="@dimen/triple_spacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="5">
+
+                <Button
+                    android:id="@+id/btn_sheet"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/normal_spacing"
+                    android:layout_weight="4"
+                    android:background="@drawable/txt_background"
+                    android:text="Search"
+                    android:textColor="@color/white" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/txt_background"
+                    android:src="@drawable/ic_map_black_24dp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/Theme.AppCompat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/triple_spacing"
+                android:layout_marginBottom="@dimen/padding_double"
+                android:text="TOP SEARCHES"
+                android:textStyle="bold" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+            <TextView
+                style="@style/Theme.AppCompat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/triple_spacing"
+                android:layout_marginBottom="@dimen/padding_double"
+                android:text="RECENT SEARCHES"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+<include layout="@layout/bottom_sheet"/>
+
+</LinearLayout>
